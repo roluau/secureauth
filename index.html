@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTP Generator</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>TOTP Generator</h1>
+
+    <div id="add_totp">
+        <label for="secret">Enter Secret Key:</label>
+        <input type="text" id="secret" placeholder="Secret Key">
+        <label for="account">Account Name:</label>
+        <input type="text" id="account" placeholder="Account Name">
+        <button onclick="addTOTP()">Add TOTP</button>
+    </div>
+
+    <div id="totps">
+        <!-- TOTP items will be inserted here dynamically -->
+    </div>
+
+    <script src="static/scripts.js"></script>
+</body>
+</html>
