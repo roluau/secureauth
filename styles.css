@@ -4,12 +4,9 @@ body {
     padding: 20px;
 }
 
-#add_totp {
-    margin-bottom: 20px;
-}
-
-#totps {
-    /* Style for TOTP items */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
 /* Other styles as required */
