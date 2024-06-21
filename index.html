@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOTP Generator</title>
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>TOTP Generator</h1>
+    <div class="container mt-4">
+        <h1 class="mb-4">TOTP Generator</h1>
 
-    <div id="add_totp">
-        <label for="secret">Enter Secret Key:</label>
-        <input type="text" id="secret" placeholder="Secret Key">
-        <label for="account">Account Name:</label>
-        <input type="text" id="account" placeholder="Account Name">
-        <button onclick="addTOTP()">Add TOTP</button>
+        <div class="form-group">
+            <label for="secret">Enter Secret Key:</label>
+            <input type="text" id="secret" class="form-control" placeholder="Secret Key">
+        </div>
+        <div class="form-group">
+            <label for="account">Account Name:</label>
+            <input type="text" id="account" class="form-control" placeholder="Account Name">
+        </div>
+        <button class="btn btn-primary mb-3" onclick="addTOTP()">Add TOTP</button>
+
+        <div id="totps">
+            <!-- TOTP items will be inserted here dynamically -->
+        </div>
     </div>
 
-    <div id="totps">
-        <!-- TOTP items will be inserted here dynamically -->
-    </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="static/scripts.js"></script>
 </body>
 </html>
