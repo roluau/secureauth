@@ -1,0 +1,15 @@
+/* Example styles, adjust as needed */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#add_totp {
+    margin-bottom: 20px;
+}
+
+#totps {
+    /* Style for TOTP items */
+}
+
+/* Other styles as required */
