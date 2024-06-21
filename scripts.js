@@ -22,5 +22,3 @@ function addTOTP() {
         alert('Error adding TOTP: ' + error);
     });
 }
-
-// Other functions for copying to clipboard, handling TOTP display, etc.
